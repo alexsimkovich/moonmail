@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>
+    MoonMail
+  </title>
+  <link href="assets/css/application.css" media="screen" rel="stylesheet" />
+  <script src="assets/js/vendor/modernizr.js"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+  <meta content="ZXbWcajE4MxnjkIIUXg0CDClzgrTwImbOCYOoUae3+c=" name="csrf-token" />
+  <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+  <meta charset='utf-8'>
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,700" media="screen" rel="stylesheet" />
+  <link href="assets/images/favicon.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+  <script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script>
+  <![endif]-->
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5X6DFD"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5X6DFD');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<div class='fixed black'>
+  <div class='container top-bar' data-topbar>
+    <ul class='title-area'>
+      <li class='name'>
+        <h1>
+          <a class="brand" href="http://ru.dev-moonmail.com/" id="menu_logo"></a>
+        </h1>
+      </li>
+      <li class='toggle-topbar menu-icon'>
+        <a href='#'>
+              <span class='sr-only'>
+                Toggle navigation
+              </span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+        </a>
+      </li>
+    </ul>
+    <section class='top-bar-section'>
+      <ul class='left'>
+        <li class='not-dropdown' id='menu_campaigns_joyride'>
+          <a href="/mailing_campaigns">Campaigns</a>
+        </li>
+        <li class='not-dropdown' id='menu_recipients_joyride'>
+          <a href="/lists" id="recipients_top_menu">Lists</a>
+        </li>
+        <li class='not-dropdown' id='menu_responders_joyride'>
+          <a href="/autoresponders">Autoresponders</a>
+        </li>
+      </ul>
+      <ul class='right'>
+        <li>
+          <a class="brand" href="/dashboard">Dashboard</a>
+        </li>
+        <li class='line'>
+          |
+        </li>
+        <li class='has-dropdown' id='menu_myaccount_joyride'>
+          <a href="/user/edit">alex.simkovich@outlook.com</a>
+          <ul class='dropdown'>
+            <li>
+              <a href="/user/edit">User settings</a>
+            </li>
+            <li>
+              <a href="/senders" id="senders_top_menu">Senders</a>
+            </li>
+            <li>
+              <a href="/user/amazon_access">Amazon API Keys</a>
+            </li>
+            <li>
+              <a href="/user/plans">Your plan</a>
+            </li>
+            <li>
+              <a href="/user/restart_tutorial">Take the tour</a>
+            </li>
+            <li>
+              <a data-method="delete" href="/logout" rel="nofollow">Logout</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>
+<div class='container'>
+  <div class='alert-box-not-hidden'>
+    In order to start sending newsletters you need to provide your SES/AWS API credentials.
+    <a href="/user/amazon_access">To add or edit your SES/AWS API credentials, click here.</a>
+  </div>
+  <div class='content'>
+    <div id='list'>
+      <div class='row'>
+        <div class='large-12 columns'>
+          <h1 id='edit-list-title'>
+            List:
+            Alex Simkovich`s List
+            <small>
+              <a href="/lists/6f848ed2b1a73262b0ac87fe0ba3af72280a70c6"><i class='fi-pencil'></i>
+                Edit
+              </a>
+            </small>
+          </h1>
+          <div id='edit-list-title-input' style='display: none;'>
+            <form accept-charset="UTF-8" action="/lists/6f848ed2b1a73262b0ac87fe0ba3af72280a70c6" class="edit_list" id="edit_list_9" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="ZXbWcajE4MxnjkIIUXg0CDClzgrTwImbOCYOoUae3+c=" /></div>      <div class='row'>
+              <div class='large-12 columns'>
+                <label for="list_name">Name</label>
+              </div>
+            </div>
+              <div class='row collapse'>
+                <div class='medium-9 columns'>
+                  <input id="list_name" name="list[name]" type="text" value="Alex Simkovich`s List" />
+                </div>
+                <div class='medium-3 columns'>
+                  <button class="button postfix" name="button" type="submit">Update name
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='large-12 columns'>
+          <div class='contain-to-grid section_title'>
+            <nav class='top-bar' data-topbar>
+              <ul class='title-area'>
+                <li class='toggle-topbar menu-icon'>
+                  <a href='#'>
+                    &nbsp;
+                  </a>
+                </li>
+              </ul>
+              <section class='top-bar-section'>
+                <ul class='left'>
+                  <li class='has-dropdown' id='list_joyride'>
+                    <a href="/lists/6f848ed2b1a73262b0ac87fe0ba3af72280a70c6" id="lists_recipients_joyride">Recipients of the list</a>
+                    <ul class='dropdown'>
+                      <li>
+                        <a href="/lists/6f848ed2b1a73262b0ac87fe0ba3af72280a70c6/recipients/import" id="import_list_recipients_joyride">Import recipients</a>
+                      </li>
+                      <li>
+                        <a data-href="/lists/6f848ed2b1a73262b0ac87fe0ba3af72280a70c6/recipients/new" data-reveal-id="addRecipientModal" data-reveal="true" href="#" id="addMemberToList">Add a recipient</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class='has-dropdown'>
+                    <a href="/lists/6f848ed2b1a73262b0ac87fe0ba3af72280a70c6/forms">Signup forms</a>
+                    <ul class='dropdown' id='lists_forms_joyride_dropdown'>
+                      <li>
+                        <a href="/lists/6f848ed2b1a73262b0ac87fe0ba3af72280a70c6/forms/general" id="general_list_forms_joyride">General form</a>
+                      </li>
+                      <li>
+                        <a href="/lists/6f848ed2b1a73262b0ac87fe0ba3af72280a70c6/forms/embedded" id="embedded_list_forms_joyride">Embedded form</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </section>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class='reveal-modal' data-reveal id='addRecipientModal'>
+        <h2>
+          Add a Recipient to list &quot;Alex Simkovich`s List&quot;
+        </h2>
+        <div id='addRecipientModalForm'></div>
+        <a class='close-reveal-modal'>
+          &#215;
+        </a>
+      </div>
+      <script>
+        var LIST_ID = "6f848ed2b1a73262b0ac87fe0ba3af72280a70c6"
+      </script>
+      <div class='row section_title'>
+        <div class='large-12 columns'>
+          <h4 class="text-center">
+            Upload from a CSV or TXT File
+          </h4>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='large-12 columns'>
+          <form accept-charset="UTF-8" action="/lists/6f848ed2b1a73262b0ac87fe0ba3af72280a70c6/recipients/save_file" class="new_list_csv" enctype="multipart/form-data" id="new_list_csv" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="ZXbWcajE4MxnjkIIUXg0CDClzgrTwImbOCYOoUae3+c=" /></div>      <div class='row'>
+            <div class='large-12 columns'>
+              <div class="text-center">
+                <a class="button success tiny" href="http://ru.dev-moonmail.com/csv/moonmail.csv">
+                  <i class='fi-download'></i>
+                  Download CSV example file
+                </a>
+              </div>
+            </div>
+          </div>
+            <div class='panel'>
+              <p>
+                We will automatically clean duplicate instances of email addresses from the list. E-mails existing in your global recipients list will be updated and joined to this list. File needs to contain a header section (first line will not be parsed).
+              </p>
+              <p>
+                Importing does not send any confirmation e-mails, we trust you have already received permission.
+              </p>
+            </div>
+            <div class='row'>
+              <div class='medium-12 columns text-center'>
+                <div class='file_input'>
+                  <input id="list_csv_csv" name="list_csv[csv]" type="file" />
+                  <button class='button' type='button'>
+                    Select file
+                  </button>
+                </div>
+              </div>
+              <!-- Dont know why this button is hidden by css o_O -->
+              <!--<div class='medium-8 columns'>
+                <button class="button uploadfile" name="button" type="submit">Upload file
+                </button>
+              </div>-->
+            </div>
+            <div class='panel'>
+              <p>
+                Supported file types:
+                <strong>
+                  CSV or semicolon delimited text file.
+                </strong>
+              </p>
+              <p>
+                Supported file character encoding:
+                <strong>
+                  UTF-8
+                </strong>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="myModal" class="reveal-modal small" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h3>Uploading file...</h3>
+  <div class="progress success">
+    <span class="meter" style="width: 0"></span>
+  </div>
+</div>
+<script>
+  window.FileAPI = { staticPath: '/javascript/FileAPI/dist/' };
+</script>
+<script src="assets/js/application.js"></script>
+<script>
+  I18n.defaultLocale = "en";
+  I18n.locale = "ru";
+</script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5HSKGT"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5HSKGT');</script>
+<!-- End Google Tag Manager -->
+<script id="IntercomSettingsScriptTag">
+  window.intercomSettings = {"email":"alex.simkovich@outlook.com","created_at":1431585625,"user_id":17,"plan":"Start","trial":null,"senders":0,"senders_verified":0,"has_amazon_api_key":null,"app_id":"azph8yp4"};
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/azph8yp4';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}};})()</script>
+</body>
+</html>
